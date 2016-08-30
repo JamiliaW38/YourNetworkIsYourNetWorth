@@ -1,4 +1,4 @@
-# Array Exercises Week 2
+# Array Exercises
 
 ## User Network
 
