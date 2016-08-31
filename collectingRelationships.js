@@ -33,6 +33,11 @@ function createNewUser(username, job, city){
 	return newUser;
 
 };
+	// for(var i=0; i< allUsers.length; i++){
+	// 	if(allUsers[city]=== joeyProfile[i])
+	// 		return 
+	
+
 // creating the user you're going to be adding to
 var joeyProfile = createNewUser('Joey Plain', 'Engineer', 'Oakland, California');
 // creating the network collection you're going to be pulling
@@ -43,7 +48,21 @@ var allUsers = youDontNeedToWorryAboutAnythingInHere();
 //console.dir(ourUser);
 //console.dir(userNetwork);
 
+for(var i=0; i< allUsers.length; i++){
 
+		if(allUsers[i].city === joeyProfile.city)
+		joeyProfile.friends.push(allUsers[i].username);		
 
-// YOUR CODE HERE
+		if(allUsers[i].job === joeyProfile.job)
+		joeyProfile.coworkers.push(allUsers[i].username);
+
+	
+
+ 	}
+
+// // YOUR CODE HERE
+
+ console.dir(joeyProfile);
+// console.dir(allUsers);
+
 
